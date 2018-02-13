@@ -28,6 +28,9 @@ export function genPoints (arr, { minX, minY, maxX, maxY }, { max, min }) {
  * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
  */
 export function genPath (points, radius) {
+  //Add 1 to beginning and end for full-height chart
+  points.unshift('1');
+  points.push('1');
   const start = points.shift()
 
   return (
