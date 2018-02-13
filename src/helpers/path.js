@@ -31,6 +31,9 @@ export function genPath (points, radius) {
   //Add 1 to beginning and end for full-height chart
   points.unshift('1');
   points.push('1');
+  
+  console.log(points);
+  
   const start = points.shift()
 
   return (
