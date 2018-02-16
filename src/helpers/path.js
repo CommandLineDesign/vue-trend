@@ -29,11 +29,9 @@ export function genPoints (arr, { minX, minY, maxX, maxY }, { max, min }) {
  */
 export function genPath (points, radius) {
   
-  console.log('line 32');
-  
-  //Add 1 to beginning and end for full-height chart
-  points.unshift('1');
-  points.push('1');
+  //Add skirt for full length chart
+  points.unshift({x:10, y: 150});
+  points.push({x:300, y: 150});
   
   console.log(points);
   
