@@ -63,6 +63,13 @@ function genPoints (arr, ref, ref$1) {
  * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
  */
 function genPath (points, radius) {
+  
+  //Add skirt for full length chart
+  points.unshift({x:10, y: 150});
+  points.push({x:300, y: 150});
+  
+  console.log(points);
+  
   var start = points.shift();
 
   return (
@@ -109,7 +116,7 @@ var Path = {
     var d = genPath(points, smooth ? radius : 0);
 
     return h('path', {
-      attrs: { d: d, fill: 'none', stroke: ("url(#" + id + ")") }
+      attrs: { d: d, fill: 'orange', stroke: ("url(#" + id + ")") }
     })
   }
 };
