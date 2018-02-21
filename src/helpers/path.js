@@ -32,9 +32,7 @@ export function genPath (points, radius) {
   //Add skirt for full length chart
   points.unshift({x:10, y: 150});
   points.push({x:300, y: 150});
-  
-  console.log(points);
-  
+
   const start = points.shift()
 
   return (
