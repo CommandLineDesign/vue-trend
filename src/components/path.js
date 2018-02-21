@@ -9,7 +9,7 @@ export default {
     const d = genPath(points, smooth ? radius : 0)
 
     return h('path', {
-      attrs: { d, fill: 'orange', stroke: `url(#${id})` }
+      attrs: { d, fill: '', stroke: `url(#${id})` }
     })
   }
 }

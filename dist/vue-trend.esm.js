@@ -114,7 +114,7 @@ var Path = {
     var d = genPath(points, smooth ? radius : 0);
 
     return h('path', {
-      attrs: { d: d, fill: 'orange', stroke: ("url(#" + id + ")") }
+      attrs: { d: d, fill: '', stroke: ("url(#" + id + ")") }
     })
   }
 };
