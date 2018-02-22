@@ -254,7 +254,7 @@ var Trend$1 = {
       'svg',
       {
         attrs: {
-          preserveAspectRatio: "\"none\"",
+          preserveAspectRatio: 'none',
           viewBox: ("0 0 " + viewWidth + " " + viewHeight)
         }
       },
