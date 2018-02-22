@@ -234,8 +234,8 @@ var Trend$1 = {
     var width = ref.width;
     var height = ref.height;
     var padding = ref.padding;
-    var viewWidth = width || 300;
-    var viewHeight = height || 75;
+    var viewWidth = width || 200;
+    var viewHeight = height || 100;
     var boundary = {
       minX: padding,
       minY: padding,
@@ -250,8 +250,7 @@ var Trend$1 = {
       'svg',
       {
         attrs: {
-          width: width || '100%',
-          height: height || '25%',
+          preserveAspectRatio: "\"none\"",
           viewBox: ("0 0 " + viewWidth + " " + viewHeight)
         }
       },
