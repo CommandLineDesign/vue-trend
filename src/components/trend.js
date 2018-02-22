@@ -90,8 +90,7 @@ export default {
       'svg',
       {
         attrs: {
-          width: width || '100%',
-          height: height || '25%',
+          preserveAspectRatio: 'none',
           viewBox: `0 0 ${viewWidth} ${viewHeight}`
         }
       },
