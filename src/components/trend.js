@@ -74,8 +74,8 @@ export default {
   render (h) {
     if (!this.data || this.data.length < 2) return
     const { width, height, padding } = this
-    const viewWidth = width || 300
-    const viewHeight = height || 75
+    const viewWidth = width || 200
+    const viewHeight = height || 100
     const boundary = {
       minX: padding,
       minY: padding,
@@ -90,7 +90,7 @@ export default {
       'svg',
       {
         attrs: {
-          preserveAspectRatio: 'none',
+          preserveAspectRatio: `"none"`,
           viewBox: `0 0 ${viewWidth} ${viewHeight}`
         }
       },
