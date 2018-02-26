@@ -90,6 +90,7 @@ export default {
       'svg',
       {
         attrs: {
+          'vector-effect':'non-scaling-stroke',
           preserveAspectRatio: 'none',
           viewBox: `0 0 ${viewWidth} ${viewHeight}`
         }
