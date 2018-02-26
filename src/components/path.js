@@ -9,7 +9,12 @@ export default {
     const d = genPath(points, smooth ? radius : 0)
 
     return h('path', {
-      attrs: { d, fill: '', stroke: `url(#${id})` }
+      attrs: { 
+      	d,
+      	'vector-effect':'non-scaling-stroke',
+      	fill: '', 
+      	stroke: `url(#${id})`
+      }
     })
   }
 }
