@@ -250,6 +250,7 @@ var Trend$1 = {
       'svg',
       {
         attrs: {
+          'vector-effect':'non-scaling-stroke',
           preserveAspectRatio: 'none',
           viewBox: ("0 0 " + viewWidth + " " + viewHeight)
         }
