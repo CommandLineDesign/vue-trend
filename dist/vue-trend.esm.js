@@ -114,7 +114,12 @@ var Path = {
     var d = genPath(points, smooth ? radius : 0);
 
     return h('path', {
-      attrs: { d: d, fill: '', stroke: ("url(#" + id + ")") }
+      attrs: { 
+      	d: d,
+      	'vector-effect':'non-scaling-stroke',
+      	fill: '', 
+      	stroke: ("url(#" + id + ")")
+      }
     })
   }
 };
@@ -248,7 +253,6 @@ var Trend$1 = {
       'svg',
       {
         attrs: {
-          'vector-effect':'non-scaling-stroke',
           preserveAspectRatio: 'none',
           viewBox: ("0 0 " + viewWidth + " " + viewHeight)
         }
