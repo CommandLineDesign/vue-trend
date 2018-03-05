@@ -123,7 +123,7 @@ var Path = {
       attrs: { 
       	d: d,
       	'vector-effect':'non-scaling-stroke',
-      	fill: '', 
+      	fill: 'none', 
       	stroke: ("url(#" + id + ")")
       }
     })
